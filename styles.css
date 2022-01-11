@@ -38,7 +38,7 @@ h1{
 }
 
 .calculator .display {
-	background: #eb1010;
+	background: rgb(7, 202, 17);;
 	padding: 1rem;
 	border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
@@ -47,7 +47,7 @@ h1{
 .display .calculator-display {
 	width: 100%;
 	border: 0px;
-	background: #b9b6b6;
+	background: #000;
 	border-radius: .725rem;
     padding: .650rem;
     box-shadow: inset 2px 3px 5px 0px rgba(190, 59, 59, 0.7);
@@ -61,15 +61,15 @@ h1{
 }
 
 output#user-input {
-	font-size: 1.325rem;
-	font-weight: 400;
+	font-size: 1.6rem;
+	font-weight: 600;
 	text-align: right;
 	color: #edf3f0;
 }
 
 output#result {
-	font-size: 1.625rem;
-	font-weight: 600;
+	font-size: 1.825rem;
+	font-weight: 700;
 	text-align: right;
 	color: #fff;
 }
@@ -117,10 +117,18 @@ button.decimal:hover {
 	transform: translateY(-0.2rem);
 }
 
+button.operators, button.equals{
+    background: #033a92;
+}
+
 button.operators:hover {
 	background: rgb(240, 122, 12);
 	color: rgb(250, 248, 248);
 	transform: translateY(-0.2em);
+}
+
+button.allclear, button.clear, button.decimal{
+    background: rgb(87, 156, 90);
 }
 
 button.allclear:hover,
