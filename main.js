@@ -23,12 +23,7 @@ calcKeys.addEventListener('click', (event) => {
 
   //If any number button is pressed
   if (type === 'number' && !isEqualsPressed) {
-    /*
-			1. Inital screen display is 0
-			2. replace initial display with user input if number is pressed
-			3. else concat with operator
-			4. if screen display is anything other than number concat the display
-		*/
+    
     if (inputDisplay === '0') {
       userInput.textContent = (previousKeyType === 'operator') ? inputDisplay + keyValue: keyValue;
       equation = (previousKeyType === 'operator') ? equation + key.value: key.value;
